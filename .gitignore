@@ -321,9 +321,11 @@ tmp/
 *.tmp
 *.temp
 
-# 다운로드된 파일
-downloads/
-download/
+# 다운로드된 파일 (루트 레벨만)
+/downloads/
+/download/
+backend/downloads/
+results/downloads/
 
 # 스크린샷
 screenshots/
