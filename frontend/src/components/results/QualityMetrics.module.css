@@ -1,0 +1,72 @@
+.container {
+  border: 1px solid #e1e5e9;
+  border-radius: 8px;
+  padding: 1.25rem;
+  background: white;
+}
+
+.header h4 {
+  margin: 0 0 1rem 0;
+  color: #495057;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.metric {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.metricLabel {
+  font-size: 0.875rem;
+  color: #6c757d;
+  font-weight: 500;
+}
+
+.qualityBadge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  color: white;
+  font-weight: 600;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  width: fit-content;
+}
+
+.confidenceContainer {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.confidenceBar {
+  flex: 1;
+  height: 8px;
+  background: #e9ecef;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.confidenceFill {
+  height: 100%;
+  border-radius: 4px;
+  transition: width 0.3s ease;
+}
+
+.confidenceText {
+  font-weight: 600;
+  color: #495057;
+  font-size: 0.875rem;
+  min-width: 40px;
+  text-align: right;
+}

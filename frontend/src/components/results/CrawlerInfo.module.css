@@ -1,0 +1,77 @@
+.container {
+  border: 1px solid #e1e5e9;
+  border-radius: 8px;
+  padding: 1.25rem;
+  background: white;
+}
+
+.header h4 {
+  margin: 0 0 1rem 0;
+  color: #495057;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.engineInfo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.engineIcon {
+  font-size: 2rem;
+  line-height: 1;
+}
+
+.engineDetails {
+  flex: 1;
+}
+
+.engineName {
+  font-weight: 600;
+  color: #667eea;
+  font-size: 1.1rem;
+  margin-bottom: 0.25rem;
+}
+
+.engineDescription {
+  font-size: 0.875rem;
+  color: #6c757d;
+  line-height: 1.4;
+}
+
+.stats {
+  border-top: 1px solid #f0f0f0;
+  padding-top: 1rem;
+}
+
+.statItem {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.statIcon {
+  font-size: 1.25rem;
+}
+
+.statInfo {
+  flex: 1;
+}
+
+.statLabel {
+  font-size: 0.875rem;
+  color: #6c757d;
+  margin-bottom: 0.25rem;
+}
+
+.statValue {
+  font-weight: 600;
+  color: #495057;
+}

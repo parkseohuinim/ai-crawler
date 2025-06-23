@@ -1,0 +1,128 @@
+.container {
+  border: 1px solid #e1e5e9;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.25rem;
+  background: #f8f9fa;
+  border-bottom: 1px solid #e1e5e9;
+}
+
+.header h3 {
+  margin: 0;
+  color: #495057;
+  font-size: 1.1rem;
+}
+
+.controls {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.expandButton,
+.copyAllButton {
+  padding: 0.5rem 1rem;
+  border: 1px solid #dee2e6;
+  border-radius: 6px;
+  background: white;
+  color: #495057;
+  cursor: pointer;
+  font-size: 0.875rem;
+  transition: all 0.2s ease;
+}
+
+.expandButton:hover,
+.copyAllButton:hover {
+  background: #e9ecef;
+  border-color: #adb5bd;
+}
+
+.copyAllButton {
+  background: #667eea;
+  color: white;
+  border-color: #667eea;
+}
+
+.copyAllButton:hover {
+  background: #5a67d8;
+  border-color: #5a67d8;
+}
+
+.jsonContainer {
+  max-height: 300px;
+  overflow-y: auto;
+  transition: max-height 0.3s ease;
+}
+
+.jsonContainer.expanded {
+  max-height: 600px;
+}
+
+.jsonContent {
+  margin: 0;
+  padding: 1.25rem;
+  font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  color: #2d3748;
+  background: #fafafa;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.previewSection {
+  padding: 1.25rem;
+  background: white;
+  border-top: 1px solid #e1e5e9;
+}
+
+.summaryGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.summaryItem {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.summaryItem strong {
+  font-size: 0.875rem;
+  color: #6c757d;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.summaryValue {
+  color: #495057;
+  font-weight: 500;
+  word-break: break-all;
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: stretch;
+  }
+
+  .controls {
+    justify-content: center;
+  }
+
+  .summaryGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .jsonContent {
+    font-size: 0.8rem;
+    padding: 1rem;
+  }
+} 
