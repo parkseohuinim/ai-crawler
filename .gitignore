@@ -292,13 +292,19 @@ dist/
 results/
 backend/results/
 **/results/
-*.json
 *.csv
 *.xlsx
+
+# 크롤링 결과 JSON 파일만 무시 (설정 파일 제외)
+results/*.json
+backend/results/*.json
+**/results/*.json
+crawl_*.json
+result_*.json
+
+# 텍스트 파일 (중요 파일 제외)
 *.txt
 !requirements.txt
-!package.json
-!tsconfig.json
 !README.md
 !ARCHITECTURE_ANALYSIS.md
 !PROJECT_SPECIFICATION.md
