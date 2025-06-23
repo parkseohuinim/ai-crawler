@@ -1,0 +1,109 @@
+.container {
+  padding: 1rem;
+  border-top: 1px solid #e5e5e5;
+  background: #fafafa;
+}
+
+.form {
+  width: 100%;
+}
+
+.inputContainer {
+  display: flex;
+  align-items: center;
+  background: white;
+  border: 2px solid #e1e5e9;
+  border-radius: 12px;
+  padding: 0.5rem;
+  transition: border-color 0.2s ease;
+}
+
+.inputContainer:focus-within {
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+.input {
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  background: transparent;
+  color: #333;
+}
+
+.input::placeholder {
+  color: #999;
+}
+
+.input:disabled {
+  color: #ccc;
+}
+
+.submitButton {
+  padding: 0.75rem;
+  background: #667eea;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+  min-width: 44px;
+  height: 44px;
+}
+
+.submitButton:hover:not(:disabled) {
+  background: #5a67d8;
+  transform: translateY(-1px);
+}
+
+.submitButton:disabled {
+  background: #cbd5e0;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.spinner {
+  width: 16px;
+  height: 16px;
+  border: 2px solid #f3f3f3;
+  border-top: 2px solid #667eea;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.errorMessage {
+  margin-top: 0.5rem;
+  color: #e53e3e;
+  font-size: 0.875rem;
+  padding-left: 1rem;
+}
+
+/* 🔧 힌트 메시지 스타일 (긍정적인 피드백용) */
+.hintMessage {
+  margin-top: 0.5rem;
+  color: #667eea;
+  font-size: 0.875rem;
+  padding-left: 1rem;
+  font-weight: 500;
+  opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0.75rem;
+  }
+  
+  .input {
+    font-size: 16px; /* Prevents zoom on iOS */
+  }
+} 
